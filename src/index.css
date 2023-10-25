@@ -11,3 +11,220 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&family=Pattaya&display=swap');
+
+body{
+  background-color: black;
+}
+html{
+  font-size: 20px;
+}
+.main{
+  width: 80vw;
+  height: auto;
+  margin: 10px auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+
+
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+
+}
+.logo{
+  color: #333;
+font-family: Pattaya;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.search-bar{
+  width: 419px;
+flex-basis:  auto;
+background: #FAFAFA;
+
+}
+.nav-p{
+  color: #333;
+font-family: Montserrat;
+font-size: 0.6rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.dark-mode{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.hero{
+
+  width: 100%;
+  height: auto;
+
+  
+}
+.hero img{
+  width: 100%;
+  /* aspect-ratio: 2; */
+  height: auto;
+}
+
+
+.gallary{
+  -webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
+-webkit-column-width  : 33%;
+-moz-column-width: 33%;
+column-width: 33px;
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease;
+}
+
+
+ 
+
+.gallary .pics{
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease;
+cursor: pointer;
+margin-bottom: 5px;
+}
+.modal{
+  border-radius: 0px 0px 16px 16px;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  -webkit-transition: all 1s ease;
+transition: all 1s ease;
+}
+
+
+
+.image-container{
+  outline: none;
+  height: 95%;
+  border-radius: 0px 0px 16px 16px;
+border: 1px solid #E5E5E5;
+background: #FFF;
+overflow-y: scroll;
+-webkit-transition: all 1s ease;
+transition: all 1s ease;
+}
+/* Define custom scrollbar styles */
+
+.image-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.image-container::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.image-container::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/* Hide the default scrollbar for non-webkit browsers (e.g., Firefox) */
+.image-container {
+  scrollbar-width: thin;
+}
+
+#user-logo{
+  border-radius: 56px;
+}
+.pic-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.left{
+  color: #4F4F4F;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.right{
+  display: flex;
+  margin-right: 5px;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width:100px) and (max-width:1167px)  {
+  .main{
+    width: 95%;
+  }
+}
+@media screen and (max-width:940px) {
+  .gallary{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+   column-count: 3;
+  }
+  html{
+    font-size: 15px;
+  }
+  
+  .none{
+    display: none;
+  }
+}
+@media screen and (max-width:560px) {
+  .gallary{
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+   column-count: 2;
+  }
+  .main{
+    width: 95%;
+  }
+  html{
+    font-size: 12px;
+  }
+  .image-container{
+    
+    height: 85%;
+  }
+}
+@media screen and (max-width:480px) {
+  .gallary{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width  : 100%;
+    -moz-column-width: 100%;
+    column-width: 100px;
+    
+    
+  }
+  html{
+    font-size: 10px;
+  }
+}
